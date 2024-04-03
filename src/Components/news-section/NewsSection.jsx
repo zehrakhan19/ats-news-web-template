@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewsSection.css";
-import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
+import { BigActionCards } from "../ActionCard/ActionCards";
 import Carousel from "../carousel/Carousel";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
@@ -136,7 +136,6 @@ const NewsSection = () => {
           ))}
         </div>
       </div>
-      {/* <ActionCards size={"big"} data={data} /> */}
     </div>
   );
 };
