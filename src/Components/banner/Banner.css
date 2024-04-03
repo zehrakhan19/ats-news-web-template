@@ -19,7 +19,7 @@
   width: 16%;
 }
 .marqee-container {
-  width: 67%;
+  width: 84%;
 }
 .marquee {
   display: flex;
@@ -36,5 +36,8 @@
 @media (max-width: 1125px) {
   .btn-container {
     width: 33%;
+  }
+  .marqee-container {
+    width: 67%;
   }
 }
