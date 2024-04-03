@@ -16,7 +16,7 @@ const ActionCards = ({ size, data }) => {
         className="card-wrapper"
         style={{
           height: size === "big" ? "200px" : "180px",
-          maxWidth: size === "big" ? "176px" : "138px",
+          maxWidth: size === "big" ? "190px" : "138px",
         }}
         // onClick={() => handleExpandClick()}
       >

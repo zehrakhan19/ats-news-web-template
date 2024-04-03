@@ -4,6 +4,7 @@ import ActionCards from "../Components/ActionCard/ActionCards";
 import Img from "../assets/image.png";
 import BImg from "../assets/banner.jpg";
 // import { Link } from "react-router-dom/dist";
+import { isMobile } from "react-device-detect";
 
 const DetailedNews = () => {
   const Array = [
@@ -193,7 +194,7 @@ const DetailedNews = () => {
             <div className="news-sports-inner-wrapper-two">
               {Array.map((item, id) => (
                 <div key={id}>
-                  <ActionCards size={"big"} data={item} />
+                  <ActionCards size={isMobile ? "small" : "big"} data={item} />
                 </div>
               ))}
             </div>
