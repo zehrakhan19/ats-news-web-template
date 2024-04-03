@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import img from "../../assets/banner.jpg";
+// import img from "../../assets/banner.jpg";
 import "./Carousel.css";
 import NewsCard from "../Card";
 import { Link } from "react-router-dom/dist";

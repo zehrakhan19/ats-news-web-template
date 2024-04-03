@@ -3,7 +3,7 @@ import Article from "../Components/Article/Article";
 import ActionCards from "../Components/ActionCard/ActionCards";
 import Img from "../assets/image.png";
 import BImg from "../assets/banner.jpg";
-import { Link } from "react-router-dom/dist";
+// import { Link } from "react-router-dom/dist";
 
 const DetailedNews = () => {
   const Array = [

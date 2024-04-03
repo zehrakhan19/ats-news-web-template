@@ -16,7 +16,7 @@ const Dropdown = ({ label, options }) => {
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         {options?.map((option, id) => (
           <li key={id}>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="/">
               {option?.name}
             </a>
           </li>

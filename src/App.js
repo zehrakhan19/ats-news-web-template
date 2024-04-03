@@ -5,13 +5,6 @@ import Footer from "./Components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DetailedNews from "./pages/DetailedNews";
-import Banner from "./Components/banner/Banner";
-import NewsSection from "./Components/news-section/NewsSection";
-import PaginationRounded from "./Components/pagination/Pagination";
-import EntertainmentFun from "./Components/entertainment-and-fun/EntertainmentFun";
-import PoliticleWorld from "./Components/political-and-world/PoliticleWorld";
-import FashionStyle from "./Components/fashion-and-style/FashionStyle";
-import AdSection from "./Components/google-ad-section/AdSection";
 
 function App() {
   return (

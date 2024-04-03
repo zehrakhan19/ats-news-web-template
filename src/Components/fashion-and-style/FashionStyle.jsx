@@ -1,7 +1,7 @@
 import React from "react";
 import "./FashionStyle.css";
 import ActionCards from "../ActionCard/ActionCards";
-import { Link } from "react-router-dom/dist";
+// import { Link } from "react-router-dom/dist";
 import Img from "../../assets/banner.jpg";
 
 const FashionStyle = () => {

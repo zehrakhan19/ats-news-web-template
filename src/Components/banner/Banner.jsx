@@ -1,6 +1,5 @@
 import React from "react";
 import "./Banner.css";
-import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
 import AdSection from "../google-ad-section/AdSection";
 

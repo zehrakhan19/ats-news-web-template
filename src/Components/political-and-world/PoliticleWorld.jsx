@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./PoliticleWorld.css";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
 import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 
 const PoliticleWorld = () => {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  // const handleSelect = (selectedIndex) => {
+  //   setIndex(selectedIndex);
+  // };
   const data = [
     {
       topic: "బిజినెస్",

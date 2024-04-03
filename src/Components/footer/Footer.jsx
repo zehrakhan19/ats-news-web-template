@@ -38,7 +38,10 @@ const Footer = () => {
           <h4>POPULAR POST</h4>
           <div className="box-footer">
             <div className="img-box-footer">
-              <img src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png" />
+              <img
+                src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png"
+                alt="img"
+              />
             </div>
             <div className="para-wrapper-footer">
               <h6>Political</h6>
@@ -50,7 +53,10 @@ const Footer = () => {
           </div>
           <div className="box-footer">
             <div className="img-box-footer">
-              <img src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png" />
+              <img
+                src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png"
+                alt="img"
+              />
             </div>
             <div className="para-wrapper-footer">
               <h6>Entertainment</h6>
@@ -62,7 +68,10 @@ const Footer = () => {
           </div>
           <div className="box-footer">
             <div className="img-box-footer">
-              <img src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png" />
+              <img
+                src="https://demoxml.com/html/ranzim/images/footer/popular-post-1.png"
+                alt="img"
+              />
             </div>
             <div className="para-wrapper-footer">
               <h6>Fashion</h6>
