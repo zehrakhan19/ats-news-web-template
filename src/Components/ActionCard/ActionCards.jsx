@@ -15,8 +15,8 @@ const ActionCards = ({ size, data }) => {
       <div
         className="card-wrapper"
         style={{
-          height: size === "big" ? "200px" : "200px",
-          maxWidth: size === "big" ? "150px" : "200px",
+          height: size === "big" ? "200px" : "180px",
+          maxWidth: size === "big" ? "176px" : "138px",
         }}
         // onClick={() => handleExpandClick()}
       >
@@ -58,8 +58,8 @@ export const BigActionCards = ({ size, data }) => {
       <div
         className="card-wrapper"
         style={{
-          height: size === "big" ? "230px" : "200px",
-          maxWidth: size === "big" ? "240px" : "200px",
+          height: size === "big" ? "230px" : "230px",
+          maxWidth: size === "big" ? "100%" : "100%",
         }}
         // onClick={() => handleExpandClick()}
       >

@@ -97,8 +97,9 @@
     justify-content: center;
   }
   .content-footer {
-    width: 80%;
+    width: 94%;
   }
+
   .inner-bottom-wrapper-footer {
     flex-direction: column;
   }

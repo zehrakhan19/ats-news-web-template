@@ -3,6 +3,7 @@ import "./FashionStyle.css";
 import ActionCards from "../ActionCard/ActionCards";
 // import { Link } from "react-router-dom/dist";
 import Img from "../../assets/banner.jpg";
+import { isMobile } from "react-device-detect";
 
 const FashionStyle = () => {
   const data = [
@@ -94,7 +95,7 @@ const FashionStyle = () => {
         <div className="news-podcast-inner-wrapper-two">
           {data?.map((item, id) => (
             <div key={id}>
-              <ActionCards size={"big"} data={item} />
+              <ActionCards size={isMobile ? "small" : "big"} data={item} />
             </div>
           ))}
         </div>

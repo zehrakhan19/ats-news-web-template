@@ -1,9 +1,10 @@
 import React from "react";
 import "./NewsSection.css";
-import ActionCards from "../ActionCard/ActionCards";
+import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
 import Carousel from "../carousel/Carousel";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
+import { isMobile } from "react-device-detect";
 
 const NewsSection = () => {
   const data = [
@@ -79,9 +80,10 @@ const NewsSection = () => {
           <div className="left-contentainer-news-section">
             {smallCardsData?.map((item, id) => (
               <div key={id}>
-                <Link to="/detailed-news">
-                  <ActionCards size={"small"} data={item} />
-                </Link>
+                {/* <Link to="/detailed-news"> */}
+                {/* <BigActionCards size={"small"} data={item} /> */}
+                <ActionCards size={isMobile ? "small" : "big"} data={item} />
+                {/* </Link> */}
               </div>
             ))}
           </div>

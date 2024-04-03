@@ -1,8 +1,12 @@
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
 .app-wrapper {
   display: flex;
 }
 .ad {
-  width: 15%;
+  width: 11%;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -16,7 +20,7 @@
   border: 1px solid #dedddd;
 }
 .app {
-  width: 70%;
+  width: 78%;
   background-color: #fff;
 }
 .content-news-wrapper {
@@ -47,6 +51,10 @@
   .left-content {
     width: 100%;
   }
+  .right-detailed-container {
+    /* width: 100%; */
+    display: none;
+  }
 }
 @media (max-width: 850px) {
   .ad {
@@ -56,9 +64,6 @@
     width: 100%;
   }
   .right-content {
-    width: 100%;
-  }
-  .right-detailed-container {
     width: 100%;
   }
 }

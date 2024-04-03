@@ -4,6 +4,7 @@ import "./PoliticleWorld.css";
 import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
+import { isMobile } from "react-device-detect";
 
 const PoliticleWorld = () => {
   // const [index, setIndex] = useState(0);
@@ -67,7 +68,10 @@ const PoliticleWorld = () => {
         <div className="news-sports-container-wrapper">
           <div className="sports-left-first">
             <div className="left-contentainer-news-section-sports">
-              <BigActionCards size={"big"} data={data[0]} />
+              <BigActionCards
+                size={isMobile ? "small" : "big"}
+                data={data[0]}
+              />
             </div>
           </div>
           <div className="sports-right-second">
@@ -108,7 +112,7 @@ const PoliticleWorld = () => {
         <div className="news-sports-inner-wrapper-two">
           {data?.map((item, id) => (
             <div key={id}>
-              <ActionCards size={"big"} data={item} />
+              <ActionCards size={isMobile ? "small" : "big"} data={item} />
             </div>
           ))}
         </div>

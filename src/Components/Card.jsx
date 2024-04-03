@@ -34,7 +34,6 @@ export default function NewsCard({ article }) {
           maxWidth: 330,
           height: 260,
           margin: 0.5,
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
         }}
         // onClick={() => handleExpandClick()}
       >

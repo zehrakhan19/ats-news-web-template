@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 100%; */
 }
 .newsCard-container {
   display: flex;
@@ -22,7 +23,7 @@
 }
 @media (max-width: 991px) {
   .big-card {
-    width: 90%;
+    width: 100%;
   }
   .small-cards {
     display: none;
