@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./PoliticleWorld.css";
 import Carousel from "react-bootstrap/Carousel";
-import ActionCards from "../ActionCard/ActionCards";
+import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 
@@ -67,7 +67,7 @@ const PoliticleWorld = () => {
         <div className="news-sports-container-wrapper">
           <div className="sports-left-first">
             <div className="left-contentainer-news-section-sports">
-              <ActionCards size={"big"} data={data[0]} />
+              <BigActionCards size={"big"} data={data[0]} />
             </div>
           </div>
           <div className="sports-right-second">

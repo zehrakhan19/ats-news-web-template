@@ -40,3 +40,25 @@
   border: 1px solid #000;
   padding: 10px;
 }
+@media (max-width: 1125px) {
+  .content-news-wrapper {
+    flex-direction: column;
+  }
+  .left-content {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .ad {
+    display: none;
+  }
+  .app {
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+  }
+  .right-detailed-container {
+    width: 100%;
+  }
+}

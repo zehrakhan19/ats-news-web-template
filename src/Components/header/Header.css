@@ -12,7 +12,9 @@
 .tab-box {
   display: flex;
   justify-content: space-between;
-  width: 33%;
+  width: 100%;
+  align-items: center;
+  overflow: scroll;
 }
 .icon-box {
   display: flex;
@@ -35,14 +37,14 @@
   cursor: pointer;
   transition: ease-in 1000;
 }
+.tabs {
+  display: contents;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
 @media (max-width: 1072px) {
   .bar {
     display: block;
-  }
-  .tab-box {
-    display: none;
-  }
-  .icon-box {
-    width: 40%;
   }
 }

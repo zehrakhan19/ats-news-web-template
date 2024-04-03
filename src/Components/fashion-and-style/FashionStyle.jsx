@@ -53,7 +53,7 @@ const FashionStyle = () => {
     <div className="news-podcast-container">
       {/* ---------------------------------News Podcast---------------------------------*/}
       <>
-        <div className="news-podcast-content">
+        {/* <div className="news-podcast-content">
           <div className="news-header">News Podcast</div>
           <div className="line-orange"></div>
         </div>
@@ -75,7 +75,7 @@ const FashionStyle = () => {
               </h9>
             </Link>
           </div>
-        </div>
+        </div> */}
       </>
       {/* ---------------------------------Photo Stories--------------------------------- */}
       <>

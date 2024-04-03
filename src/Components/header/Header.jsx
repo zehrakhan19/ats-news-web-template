@@ -1,20 +1,17 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import "./Header.css";
 import Dropdown from "../OnHoverDropDown";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import HomeIcon from "@mui/icons-material/Home";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 
-export default function Header() {
+export default function Header(props) {
   const tabs = [
     {
       tabName: "News",
-      options: [{ name: "Political" }, { name: "Crime" }],
-    },
-    {
-      tabName: "Andra Pradesh",
       options: [{ name: "Political" }, { name: "Crime" }],
     },
     {
@@ -49,23 +46,35 @@ export default function Header() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="header">
+      <AppBar position="static" component="nav">
         <Toolbar className="tab-container">
-          <div className="bar">
+          <Box
+            component={"div"}
+            className="tab-box"
+            sx={{ overflowX: { sm: "scroll" }, scrollbarWidth: "none" }}
+          >
             <IconButton
-              size="large"
-              edge="start"
               color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
+              aria-label="open drawer"
+              edge="start"
+              onClick={() => null}
             >
-              <MenuIcon />
+              <HomeIcon />
             </IconButton>
-          </div>
-          <Box component={"div"} className="tab-box">
             {tabs?.map((tab, i) => (
-              <div key={i}>
-                <Dropdown label={tab.tabName} options={tab.options} />
+              <div
+                key={i}
+                style={{ padding: "0 10px", minWidth: "fit-content" }}
+              >
+                <Typography
+                  className="tabs"
+                  component="div"
+                  sx={{ flexGrow: 1 }}
+                >
+                  {tab?.tabName}
+                </Typography>
+
+                {/* <Dropdown label={tab.tabName} options={tab.options} /> */}
               </div>
             ))}
           </Box>

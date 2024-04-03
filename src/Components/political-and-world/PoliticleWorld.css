@@ -95,6 +95,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .sports-list-headline {
   font-weight: 600;
@@ -131,5 +133,18 @@
 @media (max-width: 1340px) {
   .news-sports-inner-wrapper {
     flex-direction: column;
+  }
+}
+@media (max-width: 1125px) {
+  .news-sports-container-wrapper {
+    flex-direction: column;
+  }
+  .sports-left-first {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sports-right-second {
+    width: 100%;
   }
 }

@@ -1,7 +1,7 @@
 .banner-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #f3eded4a;
   margin-top: 14px;
   border: 2px solid #eb6a14;
@@ -24,7 +24,6 @@
 .marquee {
   display: flex;
   justify-content: space-between !important;
-  /* background-color: black; */
 }
 .content {
   display: flex;
@@ -36,9 +35,6 @@
 }
 @media (max-width: 1125px) {
   .btn-container {
-    width: 50%;
-  }
-  .marqee-container {
-    width: 50%;
+    width: 33%;
   }
 }

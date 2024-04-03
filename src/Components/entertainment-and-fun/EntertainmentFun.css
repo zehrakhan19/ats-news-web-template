@@ -23,12 +23,21 @@
 }
 .media-left-first {
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
+.media-left-first-crime {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .media-right-second {
   width: 48%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .media-list-wrapper {
   display: flex;
@@ -49,7 +58,7 @@
 
 .news-media-inner-wrapper-two {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: fit-content;
@@ -115,6 +124,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .media-list-headline {
   font-weight: 600;
@@ -151,5 +162,24 @@
 @media (max-width: 1340px) {
   .news-media-inner-wrapper {
     flex-direction: column;
+  }
+}
+@media (max-width: 1125px) {
+  .news-media-container-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .media-left-first {
+    width: 100%;
+  }
+  .media-right-second {
+    width: 100%;
+  }
+  .left-contentainer-news-section-media {
+    justify-content: center;
+  }
+  .media-left-first-crime {
+    width: 100%;
+    align-items: center;
   }
 }

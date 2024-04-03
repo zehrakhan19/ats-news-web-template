@@ -1,6 +1,6 @@
 import React from "react";
 import "./EntertainmentFun.css";
-import ActionCards from "../ActionCard/ActionCards";
+import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 
@@ -104,7 +104,7 @@ const EntertainmentFun = () => {
               <div className="line-orange"></div>
             </div>
             <div className="left-contentainer-news-section-media">
-              <ActionCards size={"big"} data={data[0]} />
+              <BigActionCards size={"big"} data={data[0]} />
             </div>
             {data?.map((item, id) => (
               <div key={id}>
@@ -130,7 +130,7 @@ const EntertainmentFun = () => {
               <div className="line-orange"></div>
             </div>
             <div className="left-contentainer-news-section-media">
-              <ActionCards size={"big"} data={data[1]} />
+              <BigActionCards size={"big"} data={data[1]} />
             </div>
             {data?.map((item, id) => (
               <div key={id}>
@@ -201,9 +201,9 @@ const EntertainmentFun = () => {
         <div className="line-orange"></div>
       </div>
       <div className="news-media-container-wrapper">
-        <div className="media-left-first">
+        <div className="media-left-first-crime">
           <div className="left-contentainer-news-section-sports">
-            <ActionCards size={"big"} data={data[0]} />
+            <BigActionCards size={"big"} data={data[0]} />
           </div>
         </div>
         <div className="media-right-second">

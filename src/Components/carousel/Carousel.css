@@ -1,6 +1,7 @@
 .carousel-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .newsCard-container {
   display: flex;

@@ -67,6 +67,21 @@
   color: #eb6a14;
   cursor: pointer;
 }
+@media (max-width: 1125px) {
+  .news-container-wrapper {
+    flex-direction: column;
+  }
+  .left-first {
+    width: 100%;
+  }
+  .right-second {
+    width: 100%;
+  }
+  .left-contentainer-news-section {
+    justify-content: space-evenly;
+  }
+}
+
 @media (max-width: 836px) {
   .section-container {
     justify-content: center;
