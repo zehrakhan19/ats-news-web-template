@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
+  border: 1px solid #dedddd;
 }
 .app {
   width: 70%;
@@ -26,18 +26,18 @@
 }
 .left-content {
   width: 65%;
-  border: 1px solid #000;
+  border: 1px solid #dedddd;
 }
 .right-content {
   width: 33%;
-  border: 1px solid #000;
+  border: 1px solid #dedddd;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .right-detailed-container {
   width: 33%;
-  border: 1px solid #000;
+  border: 1px solid #dedddd;
   padding: 10px;
 }
 @media (max-width: 1125px) {
