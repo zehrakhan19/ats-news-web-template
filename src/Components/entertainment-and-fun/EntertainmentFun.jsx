@@ -1,9 +1,6 @@
 import React from "react";
 import "./EntertainmentFun.css";
-import ActionCards, {
-  BannerCards,
-  BigActionCards,
-} from "../ActionCard/ActionCards";
+import ActionCards, { BannerCards } from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 import { isMobile } from "react-device-detect";

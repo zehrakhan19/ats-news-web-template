@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewsSection.css";
-import { BannerCards, BigActionCards } from "../ActionCard/ActionCards";
+import { BannerCards } from "../ActionCard/ActionCards";
 import Carousel from "../carousel/Carousel";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
