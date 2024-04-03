@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewsSection.css";
-import { BigActionCards } from "../ActionCard/ActionCards";
+import { BannerCards, BigActionCards } from "../ActionCard/ActionCards";
 import Carousel from "../carousel/Carousel";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
@@ -95,7 +95,8 @@ const NewsSection = () => {
             {smallCardsData?.map((item, id) => (
               <div key={id}>
                 {isMobile ? (
-                  <BigActionCards size={"small"} data={item} />
+                  // <BigActionCards size={"small"} data={item} />
+                  <BannerCards data={item} />
                 ) : (
                   <Link to="/detailed-news">
                     <div

@@ -1,7 +1,10 @@
 import React from "react";
 import "./PoliticleWorld.css";
 // import Carousel from "react-bootstrap/Carousel";
-import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
+import ActionCards, {
+  BannerCards,
+  BigActionCards,
+} from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 import { isMobile } from "react-device-detect";
@@ -68,10 +71,7 @@ const PoliticleWorld = () => {
         <div className="news-sports-container-wrapper">
           <div className="sports-left-first">
             <div className="left-contentainer-news-section-sports">
-              <BigActionCards
-                size={isMobile ? "small" : "big"}
-                data={data[0]}
-              />
+              <BannerCards data={data[0]} />
             </div>
           </div>
           <div className="sports-right-second">
@@ -111,9 +111,7 @@ const PoliticleWorld = () => {
         </div>
         <div className="news-sports-inner-wrapper-two">
           {data?.map((item, id) => (
-            <div key={id}>
-              <ActionCards size={isMobile ? "small" : "big"} data={item} />
-            </div>
+            <ActionCards size={isMobile ? "small" : "big"} data={item} />
           ))}
         </div>
         <div className="news-sports-content-movies-chip">

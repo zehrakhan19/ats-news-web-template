@@ -1,6 +1,9 @@
 import React from "react";
 import "./EntertainmentFun.css";
-import ActionCards, { BigActionCards } from "../ActionCard/ActionCards";
+import ActionCards, {
+  BannerCards,
+  BigActionCards,
+} from "../ActionCard/ActionCards";
 import { Link } from "react-router-dom/dist";
 import Img from "../../assets/image.png";
 import { isMobile } from "react-device-detect";
@@ -105,10 +108,7 @@ const EntertainmentFun = () => {
               <div className="line-orange"></div>
             </div>
             <div className="left-contentainer-news-section-media">
-              <BigActionCards
-                size={isMobile ? "small" : "big"}
-                data={data[0]}
-              />
+              <BannerCards data={data[0]} />
             </div>
             {data?.map((item, id) => (
               <div key={id}>
@@ -134,10 +134,7 @@ const EntertainmentFun = () => {
               <div className="line-orange"></div>
             </div>
             <div className="left-contentainer-news-section-media">
-              <BigActionCards
-                size={isMobile ? "small" : "big"}
-                data={data[1]}
-              />
+              <BannerCards data={data[0]} />
             </div>
             {data?.map((item, id) => (
               <div key={id}>
@@ -210,7 +207,7 @@ const EntertainmentFun = () => {
       <div className="news-media-container-wrapper">
         <div className="media-left-first-crime">
           <div className="left-contentainer-news-section-sports">
-            <BigActionCards size={isMobile ? "small" : "big"} data={data[0]} />
+            <BannerCards data={data[0]} />
           </div>
         </div>
         <div className="media-right-second">
@@ -236,9 +233,7 @@ const EntertainmentFun = () => {
         </div>
         <div className="news-media-inner-wrapper-two">
           {data?.map((item, id) => (
-            <div key={id}>
-              <ActionCards size={isMobile ? "small" : "big"} data={item} />
-            </div>
+            <ActionCards size={isMobile ? "small" : "big"} data={item} />
           ))}
         </div>
         <div className="news-media-content-movies-chip">

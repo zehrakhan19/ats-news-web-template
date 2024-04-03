@@ -6,7 +6,7 @@ export default function PaginationRounded() {
   return (
     <div
       style={{
-        padding: "2rem",
+        padding: "1rem",
         display: "flex",
         justifyContent: "center",
       }}

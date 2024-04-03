@@ -11,39 +11,44 @@ const ActionCards = ({ size, data }) => {
     setExpanded(!expanded);
   };
   return (
-    <Link to="/detailed-news">
-      <div
-        className="card-wrapper"
-        style={{
-          height: size === "big" ? "200px" : "180px",
-          maxWidth: size === "big" ? "190px" : "138px",
-        }}
-        // onClick={() => handleExpandClick()}
-      >
-        <div className="img-box">
-          <img src={data?.img} alt="img" />
-        </div>
-        <div className="content-wrapper">
-          <h6>{data?.headline}</h6>
-        </div>
-        <Modal
-          show={expanded}
-          fullscreen={true}
-          onHide={() => {
-            handleExpandClick();
+    <div
+      style={{
+        maxWidth: size === "big" ? "30%" : "48%",
+      }}
+    >
+      <Link to="/detailed-news">
+        <div
+          className="card-wrapper"
+          style={{
+            height: size === "big" ? "200px" : "200px",
           }}
+          // onClick={() => handleExpandClick()}
         >
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <Typography paragraph>{data?.headline}</Typography>
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Typography paragraph>{data?.article}</Typography>
-          </Modal.Body>
-        </Modal>
-      </div>
-    </Link>
+          <div className="img-box">
+            <img src={data?.img} alt="img" />
+          </div>
+          <div className="content-wrapper">
+            <h6>{data?.headline}</h6>
+          </div>
+          <Modal
+            show={expanded}
+            fullscreen={true}
+            onHide={() => {
+              handleExpandClick();
+            }}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>
+                <Typography paragraph>{data?.headline}</Typography>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Typography paragraph>{data?.article}</Typography>
+            </Modal.Body>
+          </Modal>
+        </div>
+      </Link>
+    </div>
   );
 };
 
@@ -54,14 +59,60 @@ export const BigActionCards = ({ size, data }) => {
     setExpanded(!expanded);
   };
   return (
+    <div
+      style={{
+        maxWidth: size === "big" ? "30%" : "48%",
+      }}
+    >
+      <Link to="/detailed-news">
+        <div
+          className="card-wrapper"
+          style={{
+            height: size === "big" ? "230px" : "230px",
+            // maxWidth: size === "big" ? "100%" : "100%",
+          }}
+          // onClick={() => handleExpandClick()}
+        >
+          <div className="img-box">
+            <img src={data?.img} alt="img" />
+          </div>
+          <div className="content-wrapper">
+            <h6>{data?.headline}</h6>
+          </div>
+          <Modal
+            show={expanded}
+            fullscreen={true}
+            onHide={() => {
+              handleExpandClick();
+            }}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>
+                <Typography paragraph>{data?.headline}</Typography>
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Typography paragraph>{data?.article}</Typography>
+            </Modal.Body>
+          </Modal>
+        </div>
+      </Link>
+    </div>
+  );
+};
+
+export const BannerCards = ({ data }) => (
+  <div
+    style={{
+      maxWidth: "100%",
+    }}
+  >
     <Link to="/detailed-news">
       <div
         className="card-wrapper"
         style={{
-          height: size === "big" ? "230px" : "230px",
-          maxWidth: size === "big" ? "100%" : "100%",
+          height: "280px",
         }}
-        // onClick={() => handleExpandClick()}
       >
         <div className="img-box">
           <img src={data?.img} alt="img" />
@@ -69,24 +120,8 @@ export const BigActionCards = ({ size, data }) => {
         <div className="content-wrapper">
           <h6>{data?.headline}</h6>
         </div>
-        <Modal
-          show={expanded}
-          fullscreen={true}
-          onHide={() => {
-            handleExpandClick();
-          }}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <Typography paragraph>{data?.headline}</Typography>
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Typography paragraph>{data?.article}</Typography>
-          </Modal.Body>
-        </Modal>
       </div>
     </Link>
-  );
-};
+  </div>
+);
 export default ActionCards;

@@ -20,6 +20,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.css-jllvdd-MuiPaper-root-MuiCard-root {
+  max-width: 100% !important;
+}
 @media (max-width: 991px) {
   .big-card {
     width: 100%;
