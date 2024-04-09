@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import React, { useEffect, useRef, useState } from "react";
+import { pdfjs } from "react-pdf";
 import { footer, topHeader } from "../../pages/EPaper";
-import file from "./new-pdf.pdf";
+import file from "./newsPdf.pdf";
+import CropImage from "../CropImage/CropImage";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const PDFViewerComponent = ({ content = file }) => {
@@ -51,6 +53,7 @@ const PDFViewerComponent = ({ content = file }) => {
         <div className="line-orange"></div>
         <canvas style={{ width: "100%" }} ref={canvasRef} />
       </div>
+      <CropImage image={file} />
       {footer()}
     </>
   );
