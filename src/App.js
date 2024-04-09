@@ -5,19 +5,11 @@ import Footer from "./Components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DetailedNews from "./pages/DetailedNews";
-import EPaper from "./pages/EPaper";
-import PDFViewerComponent from "./Components/pdf-viewer/PdfView";
 
 function App() {
   return (
     <Router>
-      {/* _____________________Epaper Website_____________________ */}
-      <Routes>
-        <Route path="/" element={<EPaper />} />
-        <Route path="/pdf-full-view" element={<PDFViewerComponent />} />
-      </Routes>
-      {/* _____________________News Website_____________________ */}
-      {/* <div className="app-wrapper">
+      <div className="app-wrapper">
         <div className="ad">
           <div>Advertisement</div>
         </div>
@@ -35,7 +27,7 @@ function App() {
         <div className="ad">
           <div>Advertisement</div>
         </div>
-      </div> */}
+      </div>
     </Router>
   );
 }
