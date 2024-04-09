@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom/dist";
 
-const ActionCards = ({ size, data }) => {
+const ActionCards = ({ key = 0, size, data }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -12,6 +12,7 @@ const ActionCards = ({ size, data }) => {
   };
   return (
     <div
+      key={key}
       style={{
         maxWidth: size === "big" ? "30%" : "48%",
       }}
@@ -52,7 +53,7 @@ const ActionCards = ({ size, data }) => {
   );
 };
 
-export const BigActionCards = ({ size, data }) => {
+export const BigActionCards = ({ key = 0, size, data }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -60,6 +61,7 @@ export const BigActionCards = ({ size, data }) => {
   };
   return (
     <div
+      key={key}
       style={{
         maxWidth: size === "big" ? "30%" : "48%",
       }}
@@ -101,8 +103,9 @@ export const BigActionCards = ({ size, data }) => {
   );
 };
 
-export const BannerCards = ({ data }) => (
+export const BannerCards = ({ key = 0, data }) => (
   <div
+    key={key}
     style={{
       maxWidth: "100%",
     }}

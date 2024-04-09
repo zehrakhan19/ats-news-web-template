@@ -121,19 +121,19 @@ const NewsSection = () => {
         </div>
         <div className="right-second">
           {data?.map((item, id) => (
-            <Link to="/detailed-news">
-              <div key={id} className="list-wrapper">
+            <div key={id} style={{ padding: "10px" }}>
+              <div className="list-wrapper">
                 <div className="bullet-wrapper">
                   <div className="bullet"></div>
                 </div>
-                <div className="list-content">
-                  <Link to="/detailed-news">
+                <Link to="/detailed-news">
+                  <div className="list-content">
                     <div className="list-headline">{item?.headline}</div>
-                  </Link>
-                  <div className="divider"></div>
-                </div>
+                  </div>
+                </Link>
               </div>
-            </Link>
+              <div className="divider"></div>
+            </div>
           ))}
         </div>
       </div>

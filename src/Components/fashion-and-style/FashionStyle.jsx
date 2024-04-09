@@ -94,7 +94,11 @@ const FashionStyle = () => {
         </div>
         <div className="news-podcast-inner-wrapper-two">
           {data?.map((item, id) => (
-            <ActionCards size={isMobile ? "small" : "big"} data={item} />
+            <ActionCards
+              key={id}
+              size={isMobile ? "small" : "big"}
+              data={item}
+            />
           ))}
         </div>
         <div className="news-podcast-content-movies-chip">

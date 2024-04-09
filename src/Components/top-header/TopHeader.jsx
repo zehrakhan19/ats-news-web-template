@@ -14,31 +14,33 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import "./TopHeader.css";
 import { isMobile } from "react-device-detect";
+import { Link } from "react-router-dom";
 
 export default function TopHeader(props) {
   const tabButtons = [
     {
-      name: "Live TV",
-      onClick: () => null,
-    },
-    {
       name: "EPaper",
-      onClick: () => null,
+      path: "/",
+      onClick: () => console.log("Redirect to new Domain"),
     },
     {
       name: "English",
+      path: "/",
       onClick: () => null,
     },
     {
       name: "Education",
+      path: "/",
       onClick: () => null,
     },
     {
       name: "YSR",
+      path: "/",
       onClick: () => null,
     },
     {
       name: "Careers",
+      path: "/",
       onClick: () => null,
     },
   ];
@@ -51,15 +53,19 @@ export default function TopHeader(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        LOGO
-      </Typography>
+      <Link to={"/"}>
+        <Typography variant="h6" sx={{ my: 2 }}>
+          LOGO
+        </Typography>
+      </Link>
       <Divider />
       <List>
         {tabButtons.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.name} />
+              <Link to={item?.path}>
+                <ListItemText primary={item.name} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -128,13 +134,15 @@ export default function TopHeader(props) {
                 component="div"
                 sx={{ flexGrow: 1, color: "#000" }}
               >
-                LOGO
+                <Link to={"/"}>LOGO</Link>
               </Typography>
               {tabButtons?.map((item, id) => (
                 <div key={id}>
-                  <div className="commonBtn" onClick={() => item?.onClick()}>
-                    {item?.name}
-                  </div>
+                  <Link to={item?.path}>
+                    <div className="commonBtn" onClick={() => item?.onClick()}>
+                      {item?.name}
+                    </div>
+                  </Link>
                 </div>
               ))}
             </Toolbar>

@@ -96,7 +96,7 @@ const Footer = () => {
               label="Enter Your E-mail"
               variant="standard"
             />
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
           </div>
         </div>
       </div>

@@ -136,7 +136,7 @@ const EntertainmentFun = () => {
             {data?.map((item, id) => (
               <div key={id}>
                 <Link to="/detailed-news">
-                  <div className="list-wrapper">
+                  <div className="media-list-wrapper">
                     <div className="news-media-img-box">
                       <img src={item?.img} alt="img" />
                     </div>
@@ -163,34 +163,34 @@ const EntertainmentFun = () => {
           <div className="news-media-container-wrapper">
             <div className="media-left-first">
               {polictics?.map((item, id) => (
-                <Link to="/detailed-news">
-                  <div key={id} className="media-list-wrapper">
-                    <div className="media-bullet-wrapper">
-                      <div className="media-bullet"></div>
-                    </div>
+                <div key={id} className="media-list-wrapper">
+                  <Link to="/detailed-news">
                     <div className="media-list-content">
+                      <div className="media-bullet-wrapper">
+                        <div className="media-bullet"></div>
+                      </div>
                       <div className="media-list-headline">
                         {item?.headline}
                       </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               ))}
             </div>
             <div className="media-right-second">
               {polictics?.map((item, id) => (
-                <Link to="/detailed-news">
-                  <div key={id} className="media-list-wrapper">
-                    <div className="media-bullet-wrapper">
-                      <div className="media-bullet"></div>
-                    </div>
+                <div key={id} className="media-list-wrapper">
+                  <Link to="/detailed-news">
                     <div className="media-list-content">
+                      <div className="media-bullet-wrapper">
+                        <div className="media-bullet"></div>
+                      </div>
                       <div className="media-list-headline">
                         {item?.headline}
                       </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -209,16 +209,16 @@ const EntertainmentFun = () => {
         </div>
         <div className="media-right-second">
           {polictics?.map((item, id) => (
-            <Link to="/detailed-news">
-              <div key={id} className="media-list-wrapper">
-                <div className="media-bullet-wrapper">
-                  <div className="media-bullet"></div>
-                </div>
+            <div key={id} className="media-list-wrapper">
+              <Link to="/detailed-news">
                 <div className="media-list-content">
+                  <div className="media-bullet-wrapper">
+                    <div className="media-bullet"></div>
+                  </div>
                   <div className="media-list-headline">{item?.headline}</div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </div>
@@ -230,7 +230,11 @@ const EntertainmentFun = () => {
         </div>
         <div className="news-media-inner-wrapper-two">
           {data?.map((item, id) => (
-            <ActionCards size={isMobile ? "small" : "big"} data={item} />
+            <ActionCards
+              key={id}
+              size={isMobile ? "small" : "big"}
+              data={item}
+            />
           ))}
         </div>
         <div className="news-media-content-movies-chip">

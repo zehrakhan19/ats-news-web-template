@@ -3,9 +3,9 @@ import "./index.css";
 
 const Dropdown = ({ label, options }) => {
   return (
-    <div class="dropdown">
+    <div className="dropdown">
       <button
-        class="btn dropdown-toggle text-white"
+        className="btn dropdown-toggle text-white"
         type="button"
         id="dropdownMenuButton"
         data-mdb-toggle="dropdown"
@@ -13,10 +13,10 @@ const Dropdown = ({ label, options }) => {
       >
         {label}
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
         {options?.map((option, id) => (
           <li key={id}>
-            <a class="dropdown-item" href="/">
+            <a className="dropdown-item" href="/">
               {option?.name}
             </a>
           </li>

@@ -108,7 +108,11 @@ const PoliticleWorld = () => {
         </div>
         <div className="news-sports-inner-wrapper-two">
           {data?.map((item, id) => (
-            <ActionCards size={isMobile ? "small" : "big"} data={item} />
+            <ActionCards
+              key={id}
+              size={isMobile ? "small" : "big"}
+              data={item}
+            />
           ))}
         </div>
         <div className="news-sports-content-movies-chip">

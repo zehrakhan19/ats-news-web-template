@@ -33,7 +33,7 @@
 }
 .list-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .news-sports-inner-wrapper {
   display: flex;

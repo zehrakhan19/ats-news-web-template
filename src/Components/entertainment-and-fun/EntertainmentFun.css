@@ -41,7 +41,7 @@
 }
 .media-list-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding-top: 1rem;
 }
 .news-media-inner-wrapper {
@@ -115,9 +115,8 @@
 }
 .media-list-content {
   margin: 0.2rem;
-  width: 95%;
+  width: 98%;
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 .news-media-content-movies-chip {
