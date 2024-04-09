@@ -44,7 +44,6 @@ const PDFViewerComponent = ({ content = file }) => {
   return (
     <>
       {topHeader()}
-
       <div className="wrapper">
         <div className="epaper-inner">
           <div className="news-header">PDF</div>

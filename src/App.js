@@ -11,12 +11,12 @@ import PDFViewerComponent from "./Components/pdf-viewer/PdfView";
 function App() {
   return (
     <Router>
-      {/* Epaper */}
+      {/* _____________________Epaper Website_____________________ */}
       <Routes>
         <Route path="/" element={<EPaper />} />
         <Route path="/pdf-full-view" element={<PDFViewerComponent />} />
       </Routes>
-      {/* News Website */}
+      {/* _____________________News Website_____________________ */}
       {/* <div className="app-wrapper">
         <div className="ad">
           <div>Advertisement</div>
